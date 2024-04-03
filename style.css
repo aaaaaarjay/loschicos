@@ -1,0 +1,507 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+	background-color: #ffffff;
+	margin: 0;
+    color: #1C244B;
+}
+
+/* .header {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    padding: 50px 0;
+    margin-top: -50px;
+}
+
+.header img {
+    width: 186.4%;
+    height: 100vh;
+    object-fit: cover; 
+}
+
+*/
+
+/*.header { 
+    display: flex; /* This enables the use of flexbox 
+    align-items: center; /* This centers the text vertically 
+    justify-content: center; /* This centers the text horizontally
+    background-color: #f4f5f9; 
+    background-size: cover; 
+    height: 800px; 
+    font-family: sans-serif; 
+    font-size: 35px; 
+    font-weight: bold; 
+    text-align: center;
+    line-height: .9;
+    color: #1C244B; 
+
+} */
+
+.head * {
+    box-sizing: border-box;
+}
+
+/*
+.head {
+    width: 1864px;
+    height: 900px;
+  position: relative;
+} */
+
+
+.head {
+    width: 99.2vw;
+    height: 100vh;
+  position: relative;
+}
+
+
+.nav {
+	display: -webkit-flex;
+    background-color: #ffffff;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navtext a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 27px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+	font-family: cursive;
+
+}
+
+.navtext {
+	display: flex;
+}
+
+.navlogo {
+	margin-left: 15px;
+    
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.section {
+    padding: 20px;
+    margin-top: 20px;
+	text-align: center;
+	font-size: 18px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.ourproducts {
+    font-size: 60px;
+}
+
+.proddescription {
+    font-size: 20px;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+.prodtitle {
+    font-size: 20px;
+}
+
+.proddesc {
+    font-size: 16px;
+
+}
+
+
+.card {
+    display: grid;
+ 
+    transition: 0.3s;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 15px;
+    align-items: center;
+    width: 280px;
+    height: 500px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.card .price {
+    color: #ff6347;
+    margin: 0;
+    padding: 0;
+}
+
+.buttonprods {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#insidebutton {
+    font-size: 20px;
+    padding: 15px 20px;
+    border: 2px solid #2cd37b;
+    border-radius: 30px;
+    background-color: #2cd37b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+#insidebutton:hover {
+    border-color: #2cd37b;
+    transform: scale(1.05);
+
+}
+
+
+
+.homeabout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.homeaboutsec {
+    display: flex;
+    align-items: center;
+}
+
+.homeaboutcontent {
+    width: 50%;
+
+}
+
+.homeaboutlogo img {
+    width: 700px;
+    height: auto;
+    margin-left: 150px;
+    
+}
+
+.homeabouttitle {
+    font-size: 60px;
+}
+
+.homeaboutdesc {
+    font-size: 20px;
+}
+
+
+
+.homecontactsec {
+	display: flex;
+	flex-direction: column;
+}
+
+.homecontactrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+.homecontactcontent {
+	flex: 1;
+    align-items: center;
+    padding-left: 300px;
+}
+
+.homecontactusimg {
+	flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 300px;
+    
+
+}
+
+.push-right {
+	margin-left: auto;
+}
+
+.homecontactustitle {
+	font-size: 60px;
+}
+
+.homecontactusdesc {
+	font-size: 20px;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    position: absolute;
+    left: 0;
+    bottom: 1;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    
+}
+
+
+
+/* PRODUCTS PAGE */
+
+.sectionprods {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+	text-align: center;
+	font-size: 20px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.ourproductsprods{
+    font-size: 60px;
+}
+
+.section-contentprods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
+
+.prodtitleprods {
+    font-size: 20px;
+}
+
+.proddescprods {
+    font-size: 16px;
+
+}
+
+
+.cardprods {
+    display: grid;
+    border-radius: 30px;
+    transition: 0.3s;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 15px;
+    align-items: center;
+    width: 280px;
+    height: 570px;
+
+}
+
+.cardprods:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.cardprods h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.cardprods .price {
+    color: #ff6347;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* ABOUT PAGE */
+
+
+
+/*         VISION       */
+
+.abuotvisionsec {
+	display: flex;
+	flex-direction: column;
+}
+
+.aboutvisionrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+.aboutvisioncontent {
+	flex: 1;
+    align-items: center;
+    padding-left: 230px;
+}
+
+.aboutvisionimg img {
+	margin-right: 150px;
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+
+}
+
+
+
+.push-right {
+	margin-left: auto;
+}
+
+.aboutvisionstitle {
+	font-size: 60px;
+}
+
+.aboutvisiondesc {
+	font-size: 20px;    
+}
+
+
+
+
+
+/*         MISSION       */
+
+.aboutmission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.aboutmissionsec {
+    display: flex;
+    align-items: center;
+}
+
+.aboutmissioncontent {
+    width: 50%;
+    padding-left: 200px;
+
+}
+
+.aboutmissionlogo img {
+    width: 400px;
+    height: auto;
+    margin-left: 200px;
+    border-radius: 30px;
+}
+
+.aboumissionttitle {
+    font-size: 60px;
+}
+
+.aboutmissiondesc {
+    font-size: 20px;
+}
+
+
+
+
+/*         CONTACT US       */
+
+
+.contactus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+/*         FACEBOOK       */
+
+.contactsec {
+    display: flex;
+    align-items: center;
+}
+
+.contactuscontent {
+    width: 50%;
+
+}
+
+.contactimagefb img {
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 200px;
+    
+}
+
+.contactustitle {
+    font-size: 60px;
+    margin-left: 150px;
+}
+
+.contactusdesc {
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+
+.contactimageemail img {
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+    
+}
+
+
+
+.contactimagephone img {
+    width: 400px;
+    height: auto;
+    margin-left: 150px;
+    
+}
